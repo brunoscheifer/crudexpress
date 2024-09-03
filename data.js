@@ -1,4 +1,4 @@
-let livros =[
+let livros = [
     {id:1, titulo:'Dom Casmurro', autor:'Machado de Assis', ano:'1899', genero:'Romance'},
     {id:2, titulo:'Memórias Póstumas de Brás Cubas', autor:'Machado de Assis', ano:'1881', genero:'Romance'},
     {id:3, titulo:'Guarani', autor:'José de Alencar', ano:'1857', genero:'Romance'}
@@ -16,4 +16,4 @@ let alugueis = [
     {id:3, idLivro:3, idEstudante:3, dataAluguel:'2024-09-02', dataDevolucao:'2020-09-10'}
 ];
 
-module.exports = { livros, estudantes, alugueis};
+module.exports = {livros, estudantes, alugueis};
