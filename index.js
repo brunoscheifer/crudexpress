@@ -6,8 +6,17 @@ const listaralugueis = require('./alugueis/listaralugueis')
 const attalugueis = require('./alugueis/attalugueis')
 const addalugueis = require('./alugueis/addalugueis')
 const delalugueis = require('./alugueis/delalugueis')
+const aluguelbyidlivro = require('./alugueis/aluguelbyidlivro')
+const aluguelbyidestudante = require('./alugueis/aluguelbyidestudante')
+const aluguelbydata = require('./alugueis/aluguelbydata')
+
+app.get('/alugueis', aluguelbyidlivro)
 
 app.get('/alugueis', listaralugueis)
+
+app.get('/alugueis/estudante', aluguelbyidestudante)
+
+app.get('/alugueis/data', aluguelbydata)
 
 app.post('/aluguel', addalugueis)
 

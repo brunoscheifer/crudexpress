@@ -1,6 +1,7 @@
 const { alugueis } = require('../data')
 
 function addalugueis(req, res) {
+
     const novoAluguel = {
         id: alugueis.length + 1,
         idLivro: req.body.idLivro,
