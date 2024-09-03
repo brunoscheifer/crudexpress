@@ -15,3 +15,5 @@ let alugueis = [
     {id:2, idLivro:2, idEstudante:2, dataAluguel:'2024-09-03', dataDevolucao:'2024-09-12'},
     {id:3, idLivro:3, idEstudante:3, dataAluguel:'2024-09-02', dataDevolucao:'2020-09-10'}
 ];
+
+module.exports = { livros, estudantes, alugueis}
