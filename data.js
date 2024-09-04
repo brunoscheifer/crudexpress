@@ -5,9 +5,9 @@ let livros = [
 ];
 
 let estudantes = [
-    {id:1, nome:'Ana Silva', matricula:'2024001', curso: 'Letras', ano:'2'},
-    {id:2, nome:'Pedro Santos', matricula:'2024002', curso:'Medicina' , ano:'3'},
-    {id:3, nome:'Laura Oliveira', matricula:'2024003', curso:'Engenharia de Software' , ano:'1'}
+    {id:1, nome:'Ana Silva', matricula:'2024001', curso: 'Letras', ano:'2024'},
+    {id:2, nome:'Pedro Santos', matricula:'2024002', curso:'Medicina' , ano:'2024'},
+    {id:3, nome:'Laura Oliveira', matricula:'2024003', curso:'Engenharia de Software' , ano:'2024'}
 ];
 
 let alugueis = [
