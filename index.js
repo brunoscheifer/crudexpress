@@ -48,7 +48,26 @@ app.put('/aluguel/:id', attalugueis)
 
 app.delete('/aluguel/:id', delalugueis)
 
+// Livros
 
+const criarLivro = require('./livros/criarLivro')
+const listarLivros = require('./livros/listarLivros')
+const editarLivro = require('./livros/criarLivro')
+const deletarLivro = require('./livros/deleteLivro');
+const buscarLivrosPorAutor = require('./livros/buscarLivrosPorAutor')
+const buscarLivrosPorAno = require('./livros/buscarLivrosPorAno')
+const buscarLivrosPorGenero = require('./livros/buscarLivrosPorGenero')
+const buscarLivrosPorTitulo = require('./livros/buscarLivrosPorTitulo')
+
+app.post('/livro', criarLivro)
+app.get('/livros', listarLivros)
+app.put('/livro/id:', editarLivro)
+app.delete('/livro/:id', deletarLivro)
+
+app.get('/livro', buscarLivrosPorGenero)
+app.get('/livro', buscarLivrosPorAno)
+app.get('/livro', buscarLivrosPorTitulo)
+app.get('/livro', buscarLivrosPorAutor)
 
 app.get('/', (req, res) => {
     res.send('Seja bem vindo!');
