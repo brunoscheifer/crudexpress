@@ -49,7 +49,6 @@ app.put('/aluguel/:id', attalugueis)
 app.delete('/aluguel/:id', delalugueis)
 
 // Livros
-
 const criarLivro = require('./livros/criarLivro')
 const listarLivros = require('./livros/listarLivros')
 const editarLivro = require('./livros/criarLivro')
@@ -76,5 +75,3 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}`);
 });
-
-
