@@ -34,9 +34,9 @@ const aluguelbyidlivro = require('./alugueis/aluguelbyidlivro')
 const aluguelbyidestudante = require('./alugueis/aluguelbyidestudante')
 const aluguelbydata = require('./alugueis/aluguelbydata')
 
-app.get('/alugueis', aluguelbyidlivro)
-
 app.get('/alugueis', listaralugueis)
+
+app.get('/alugueis/livros', aluguelbyidlivro)
 
 app.get('/alugueis/estudante', aluguelbyidestudante)
 
